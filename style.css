@@ -112,7 +112,7 @@ header {
     flex: 0 0 auto;
     -webkit-flex: 0 0 auto;
     position: relative;
-    z-index: 2;
+    z-index: 5;
 }
 
 .content {
@@ -531,6 +531,19 @@ textarea:focus {
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
 /*-------------------------------------------*/
+
+.main_nav_sect {
+    height: 50px;
+}
+
+#nav_sect.fixed {
+    background-color: #481268;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
 
 /* ----- Responsive Menu Button ------ */
 

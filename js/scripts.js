@@ -4,6 +4,7 @@ e = d.documentElement,
 g = d.getElementsByTagName('body')[0],
 bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
+var parentBlock;
 
 $(window).load(function() {
 
@@ -50,5 +51,22 @@ $(document).ready(function() {
             //   ]
         });
     }
+
+    $(".dropdown_item_title").on("click", function(e) {
+      e.preventDefault();
+      parentBlock = $(this).closest(".dropdown_item");
+      dropdownBox = parentBlock.find(".dropdown_item_content");
+      if(parentBlock.hasClass("active")) {
+        dropdownBox.slideUp(300);
+        parentBlock.removeClass("active");
+      } else {
+        dropdownBox.slideDown(300);
+        parentBlock.addClass("active");
+      }
+    });
+
+    // ----------
+
+    $("input[type='tel']").mask("+38 (999) 999-99-99");
 
 });

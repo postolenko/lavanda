@@ -1020,6 +1020,10 @@ a.tel_link {
 
 /*-- Section 2 --*/
 
+.section_2 {
+    padding: 80px 0 48px 0;
+}
+
 .title_wrapp {
     margin: 12px 0;
     text-align: center;
@@ -1046,6 +1050,24 @@ a.tel_link {
     height: 500px;
     margin: 4px 0;
     position: relative;
+}
+
+.about_article:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 362px;
+    max-height: 100%;
+    background-image: url(img/circle_lines.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 84px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
 }
 
 .about_descript {
@@ -1186,7 +1208,7 @@ a.tel_link {
     display: -webkit-flex;
     flex-wrap: wrap;
     flex-wrap: -webkit-wrap;
-    margin: 0 -10px;
+    margin: -17px -10px 0 -10px;
 }
 
 .thumb_2 {
@@ -1258,7 +1280,7 @@ a.tel_link {
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-    margin: 32px 0;
+    margin: 32px 0 38px 0;
 }
 
 .article_2 .left_col {
@@ -1354,7 +1376,7 @@ a.tel_link {
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-    margin: 0 -20px;
+    margin: 54px -20px 19px -20px;
 }
 
 .item_thumb {
@@ -1428,6 +1450,7 @@ a.tel_link {
 /*-- Section 5 --*/
 
 .strategy {
+    margin: 32px 0;
     height: 655px;
     background-image: url(img/mountain.png);
     background-size: cover;
@@ -1577,6 +1600,12 @@ a.tel_link {
 
 /*-- Section 6 --*/
 
+.section_6 {
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/sect_6_bg.png);
+}
+
 .warranty_wrapp {
     max-width: 580px;
     margin: 0 auto;
@@ -1615,6 +1644,10 @@ a.tel_link {
     color: #1d2323;
 }
 
+.steps_wrapp {
+    padding: 86px 0 77px 0;
+}
+
 .steps_thumbs {
     display: flex;
     display: -webkit-flex;
@@ -1627,8 +1660,25 @@ a.tel_link {
     display: inline-flex;
     display: -webkit-inline-flex;   
     width: calc(33.33% - 20px);
-    margin: 130px 10px 10px 10px;
+    margin: 109px 10px 10px 10px;
     position: relative;
+}
+
+.step_thumb:after {
+    content: "";
+    width: 230px;
+    height: 88px;
+    background-size: contain;
+    background-position: center;
+    background-image: url(img/step_thumb_line.png);
+    position: absolute;
+    top: -67px;
+    left: 100%;
+    margin-left: -104px;
+}
+
+.step_thumb:last-child:after {
+    display: none;
 }
 
 .step_thumb_content {
@@ -1766,7 +1816,7 @@ a.tel_link {
     color: #ffffff;
 }
 
-.title_wrapp h2:after {
+.title_wrapp.white h2:after {
     background: #cab0da;
 }
 
@@ -1779,7 +1829,7 @@ a.tel_link {
 }
 
 .causes_wrapp {
-
+    margin: -33px 0 55px 0;
 }
 
 .cause_item {
@@ -1840,6 +1890,18 @@ a.tel_link {
     color: #ffffff;
 }
 
+.cause_item ul {
+    margin-bottom: 8px;
+}
+
+.cause_item ul li {
+    padding: 2px 0;
+    font-size: 16px
+    line-height: 22px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
 .causes_footer {
     text-align: center;
     padding: 25px 65px 25px 65px;
@@ -1856,6 +1918,10 @@ a.tel_link {
 /*-- /Section 7 --*/
 
 /*-- Section 8 --*/
+
+.section_8 {
+    padding: 95px 0 20px 0;
+}
 
 .contact_form_box {
     -webkit-border-radius: 20px;
@@ -2016,8 +2082,12 @@ a.tel_link {
 
 /*-- Section 9 --*/
 
-.item {
+.section_9 {
+    padding-bottom: 1px;
+}
 
+.items {
+    padding: 41px 0 7px 0;
 }
 
 .item_title {
@@ -2259,8 +2329,15 @@ a.tel_link {
 
 /*-- Section 10 --*/
 
+.section_10 {
+    padding: 40px 0 64px 0;
+    background-size: cover;
+    background-image: url(img/testimonials_bg.png);
+    background-position: center;
+}
+
 .testimonial_slider {
-    margin: 0 -10px;
+    margin: 30px -10px;
 }
 
 .testimonial_slider .slide {
@@ -2362,6 +2439,10 @@ a.tel_link {
 
 /*-- Section 11 --*/
 
+.section_11 {
+    padding: 79px 0 75px 0;
+}
+
 .purple_bg {
     background: #2b0641;
 }
@@ -2421,6 +2502,14 @@ a.tel_link {
 /*-- /Section 11 --*/
 
 /*-- Section 12 --*/
+
+.section_12 {
+    padding: 77px 0 16px 0;
+}
+
+.dropdowns_items {
+    margin: 23px 0 49px 0;
+}
 
 .dropdown_item {
     padding: 24px 0;
@@ -2502,6 +2591,10 @@ a.tel_link {
 /*-- /Section 12 --*/
 
 /*-- Section 13 --*/
+
+.section_13 {
+    padding-bottom: 70px;
+}
 
 .contact_form_box_2 {
     margin-bottom: 13px;

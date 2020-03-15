@@ -106,6 +106,7 @@ body {
     -ms-flex-direction: column;
     min-height: 100%;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 header {
@@ -332,7 +333,6 @@ textarea:focus {
     margin-top: 3px;
     background: transparent;
     border: 1px solid transparent;
-    /*outline: 1px solid red;*/
 }
 
 .slick-prev {
@@ -557,7 +557,7 @@ textarea:focus {
     cursor: pointer;
     position: relative;
     top: 6px;
-    z-index: 11;
+    z-index: 14;
     border: 1px solid transparent;
 }
 
@@ -565,7 +565,7 @@ textarea:focus {
     display: block;
     width: 27px;
     height: 2px;
-    background: #466896;
+    background: #481268;
     margin: 0 auto 7px auto;
     -webkit-transition-property: transform, border, background;
     -webkit-transition-duration: .3s;
@@ -598,7 +598,7 @@ textarea:focus {
 }
 
 .respmenubtn:hover span {
-    background: #e9ba5f;
+    background: #cab0da;
 }
 
 .respmenubtn.active span {
@@ -606,7 +606,7 @@ textarea:focus {
     width: 35px;
     top: 2px;
     left: 0;
-    background: #e9ba5f;
+    background: #cab0da;
 }
 
 .respmenubtn.active span:last-child {
@@ -659,6 +659,19 @@ textarea:focus {
     -webkit-justify-content: flex-end;
 }
 
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 212px;
+}
+
+.logo img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
 .contacts_wrapp {
     margin: 0 -30px;
 }
@@ -675,6 +688,10 @@ textarea:focus {
 
 .contact_thumb .col_2 {
     width: calc(100% - 45px);
+}
+
+.contact_thumb .col_1 a {
+    display: block;
 }
 
 .contact_thumb p {
@@ -1439,7 +1456,7 @@ a.tel_link {
 }
 
 .item_thumb .thumb_descript {
-    padding: 48px 15px 10px 15px;
+    padding: 48px 15px 15px 15px;
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
     border-radius: 35px;
@@ -1897,7 +1914,7 @@ a.tel_link {
 
 .cause_item p {
     padding: 4px 0;
-    font-size: 16px
+    font-size: 16px;
     line-height: 22px;
     font-weight: normal;
     color: #ffffff;
@@ -1909,7 +1926,7 @@ a.tel_link {
 
 .cause_item ul li {
     padding: 2px 0;
-    font-size: 16px
+    font-size: 16px;
     line-height: 22px;
     font-weight: normal;
     color: #ffffff;
@@ -2246,7 +2263,7 @@ a.tel_link {
     margin: 10px;
     align-items: center;
     -webkit-align-items: center;
-    min-height: 180px;
+    min-height: 205px;
     position: relative;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -2286,12 +2303,12 @@ a.tel_link {
     text-align: center;
     position: relative;
     z-index: 3;
-    padding: 0 25px;
+    padding: 0 25px 10px 25px;
 }
 
 .thumb_4 .thumb_logo {
-    height: 90px;
-    margin: 0 0 10px 0;
+    height: 86px;
+    margin: 0 0 5px 0;
     position: relative;
 }
 
@@ -2360,7 +2377,7 @@ a.tel_link {
 .testimonial {
     min-height: 278px;
     margin: 110px 0 20px 0;
-    padding: 1px 20px 10px 20px;
+    padding: 1px 20px 20px 20px;
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
     border-radius: 35px;
@@ -2933,3 +2950,147 @@ footer {
     color: #cab0da;
     border-bottom: 1px solid #cab0da;
 }
+
+/*-- Animation --*/
+
+.leftSlice {
+    position: relative;
+    left: -3%;
+    opacity: 0;
+    -webkit-transition-property: left, opacity;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-delay: .3s;
+    -webkit-transition-timing-function: ease-in-out;
+
+    -moz-transition-property: left, opacity;
+    -moz-transition-duration: .7s;
+    -moz-transition-delay: .3s;
+    -moz-transition-timing-function: ease-in-out;
+
+    -ms-transition-property: left, opacity;
+    -ms-transition-duration: .7s;
+    -ms-transition-delay: .3s;
+    -ms-transition-timing-function: ease-in-out;
+
+    -o-transition-property: left, opacity;
+    -o-transition-duration: .7s;
+    -o-transition-delay: .3s;
+    -o-transition-timing-function: ease-in-out;
+
+    transition-property: left, opacity;
+    transition-duration: .7s;
+    transition-delay: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.animate.active.leftSlice {
+    left: 0;
+    opacity: 1;
+}
+
+.fadeIn {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-delay: .3s;
+    -webkit-transition-timing-function: ease-in-out;
+
+    -moz-transition-property: opacity;
+    -moz-transition-duration: .7s;
+    -moz-transition-delay: .3s;
+    -moz-transition-timing-function: ease-in-out;
+
+    -ms-transition-property: opacity;
+    -ms-transition-duration: .7s;
+    -ms-transition-delay: .3s;
+    -ms-transition-timing-function: ease-in-out;
+
+    -o-transition-property: opacity;
+    -o-transition-duration: .7s;
+    --transition-delay: .3s;
+    -o-transition-timing-function: ease-in-out;
+
+    transition-property: opacity;
+    transition-duration: .7s;
+    transition-delay: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.animate.active.fadeIn {
+    opacity: 1;
+}
+
+.zoomFade {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition-property: opacity, transform;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-delay: .3s;
+    -webkit-transition-timing-function: ease-in-out;
+
+    -moz-transition-property: opacity, transform;
+    -moz-transition-duration: .7s;
+    -moz-transition-delay: .3s;
+    -moz-transition-timing-function: ease-in-out;
+
+    -ms-transition-property: opacity, transform;
+    -ms-transition-duration: .7s;
+    -ms-transition-delay: .3s;
+    -ms-transition-timing-function: ease-in-out;
+
+    -o-transition-property: opacity, transform;
+    -o-transition-duration: .7s;
+    --transition-delay: .3s;
+    -o-transition-timing-function: ease-in-out;
+
+    transition-property: opacity, transform;
+    transition-duration: .7s;
+    transition-delay: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.animate.active.zoomFade {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+
+.fadeInUp {
+    position: relative;
+    bottom: -20px;
+    opacity: 0;
+    -webkit-transition-property: bottom, opacity;
+    -webkit-transition-duration: .7s;
+    -webkit-transition-delay: .3s;
+    -webkit-transition-timing-function: ease-in-out;
+
+    -moz-transition-property: bottom, opacity;
+    -moz-transition-duration: .7s;
+    -moz-transition-delay: .3s;
+    -moz-transition-timing-function: ease-in-out;
+
+    -ms-transition-property: bottom, opacity;
+    -ms-transition-duration: .7s;
+    -ms-transition-delay: .3s;
+    -ms-transition-timing-function: ease-in-out;
+
+    -o-transition-property: bottom, opacity;
+    -o-transition-duration: .7s;
+    -o-transition-delay: .3s;
+    -o-transition-timing-function: ease-in-out;
+
+    transition-property: bottom, opacity;
+    transition-duration: .7s;
+    transition-delay: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.animate.active.fadeInUp {
+    bottom: 0;
+    opacity: 1;
+}
+
+/*-- /Animation --*/

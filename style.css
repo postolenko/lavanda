@@ -1652,7 +1652,7 @@ a.tel_link {
 
 .warranty .col_1 {
     width: 65px;
-    padding-left: 2px;
+    padding: 0 5px 0 2px;
 }
 
 .warranty .col_2 {

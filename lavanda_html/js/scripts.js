@@ -23,13 +23,6 @@ bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 var parentBlock;
 
-$(window).on("load", function() {
-    setTimeout(function () {
-        $(".popup_wrapp").addClass("visible");
-        $(".popup_bg").addClass("visible");
-    }, 15000);
-});
-
 $(window).resize(function() {
   bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
   getHeaderParams();
@@ -122,39 +115,6 @@ $(document).ready(function() {
             $("#resp_nav").is(":visible") ) {
                 $("#resp_nav").fadeOut(300);
                 $(".respmenubtn").removeClass("active");
-        }
-    });
-
-    // -----------
-
-    $("#vdz_cb_widget").on("click", function(e) {
-        e.preventDefault();
-        if(!$(".popup_wrapp").hasClass("visible")) {
-            $(".popup_wrapp").addClass("visible");
-            $(".popup_bg").addClass("visible");
-        }
-    });
-
-    $(this).keydown(function(eventObject){
-        if (eventObject.which == 27 &&
-            $("#resp_nav").is(":visible") ) {
-            $(".popup_wrapp").removeClass("visible");
-            $(".popup_bg").removeClass("visible");
-        }
-    });
-
-    $(".popup .close_btn").on("click", function(e) {
-        e.preventDefault();
-        $(".popup_wrapp").removeClass("visible");
-        $(".popup_bg").removeClass("visible");
-    });
-
-    $(document).mouseup(function (e){
-        var div = $(".popup");
-        if (!div.is(e.target) 
-            && div.has(e.target).length === 0) {
-                $(".popup_wrapp").removeClass("visible");
-                $(".popup_bg").removeClass("visible");
         }
     });
 

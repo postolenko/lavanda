@@ -23,12 +23,6 @@ bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 var parentBlock;
 
-$(window).load(function() {
-
-
-
-});
-
 $(window).resize(function() {
   bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
   getHeaderParams();
@@ -48,7 +42,7 @@ $(document).ready(function() {
         $(".testimonial_slider").not(".slick-initialized").slick({
             dots: true,
             arrows: true,
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: 4000,
             speed: 1200,
             slidesToShow: 2,
@@ -123,7 +117,5 @@ $(document).ready(function() {
                 $(".respmenubtn").removeClass("active");
         }
     });
-    
-    // ----------
 
 });

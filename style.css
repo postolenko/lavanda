@@ -278,22 +278,6 @@ a:active {
     -webkit-tap-highlight-color: transparent;
 }
 
-input {
-
-}
-
-input:focus {
-
-}
-
-textarea {
-
-}
-
-textarea:focus {
-
-}
-
 /*-------------------------------------------*/
 /* ----- REUSABLE COMPONENTS ------ */
 /*-------------------------------------------*/
@@ -458,7 +442,6 @@ textarea:focus {
     transition-duration: .3s;
     transition-timing-function: ease;
 }
-
 
 .slick-next:after {
     display: block;
@@ -632,10 +615,6 @@ textarea:focus {
 }
 
 /* ----- / Responsive Menu Button ------ */
-
-.header_site {
-
-}
 
 .header_row {
     display: flex;
@@ -852,10 +831,6 @@ a.tel_link {
     padding: 15px 35px;
 }
 
-.main_nav li {
-
-}
-
 .main_nav li a {
     font-size: 16px;
     line-height: 20px;
@@ -936,10 +911,6 @@ a.tel_link {
 
 .promo_desc {
     max-width: 930px;
-}
-
-.promo_desc {
-
 }
 
 .promo_desc h1 {
@@ -1357,10 +1328,6 @@ a.tel_link {
     z-index: 2;
 }
 
-.article_2_descript {
-
-}
-
 .article_2_descript h4 {
     font-size: 20px;
     line-height: 26px;
@@ -1541,10 +1508,6 @@ a.tel_link {
     line-height: 22px;
     font-weight: bold;
     color: #ffffff;
-}
-
-.strategy_item ul {
-
 }
 
 .strategy_item ul li {
@@ -2019,10 +1982,6 @@ a.tel_link {
     margin: 10px;
 }
 
-.input_wrapp {
-
-}
-
 .input_wrapp input {
     width: 100%;
     border: 1px solid transparent;
@@ -2036,10 +1995,6 @@ a.tel_link {
     line-height: 49px;
     font-weight: normal;
     color: #8e8e8e;
-}
-
-.submit_wrapp {
-
 }
 
 .purple_pill {
@@ -2454,10 +2409,6 @@ a.tel_link {
     color: #9273a5;
 }
 
-.testimonial_text {
-
-}
-
 .testimonial_text p {
     font-size: 16px;
     line-height: 22px;
@@ -2735,10 +2686,6 @@ footer {
 
 .footer_contact_thumbs .contact_thumb {
     margin: 9px 0;
-}
-
-.contact_thumb.light {
-
 }
 
 .contact_thumb.light p {
